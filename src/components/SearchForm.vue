@@ -12,11 +12,11 @@ const props = defineProps({
 const ql:string = props.ql == "" ? getCurrentKeyword() : props.ql;
 
 function getCurrentKeyword(){
-	return "キーワード   e.g.「雨」";
+	return "キーワード  （例：「雨」、「雷」）";
 }
 
 function getPlaceHolder(){
-	return "キーワード   e.g.「雨」";
+	return "キーワード  （例：「雨」、「雷」）";
 }
 
 // 検索できるか判定

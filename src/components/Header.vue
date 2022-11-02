@@ -1,11 +1,19 @@
 <!-- client/components/Header.vue -->
 <template>
   <header class="header wrapper">
-    <nuxt-link :to='`/`'>
-      <h1 class="title">
-        日本中世気象災害史年表稿 	(藤木久志編 高志書院)
-      </h1>
-    </nuxt-link>
+    <div>
+      <nuxt-link :to='`/`'>
+        <h1 class="title">
+          『日本中世気象災害史年表稿』ビューア <!--(藤木久志編 高志書院)-->
+        </h1>
+      </nuxt-link>
+    <div>
+      <nav>
+        <NuxtLink to="/" class="nav">トップ</NuxtLink>
+        <NuxtLink to="/site" class="nav">このサイトについて</NuxtLink>
+        <NuxtLink to="/about" class="nav">『日本中世気象災害史年表稿』について</NuxtLink>
+      </nav>
+    </div></div>
   </header>
 </template>
 
@@ -35,5 +43,10 @@
   line-height: 1.4em;
   justify-content: center;
   letter-spacing: 1px;
+}
+
+.nav {
+  margin: 4rem 4rem 4rem;
+  text-align: center;
 }
 </style>

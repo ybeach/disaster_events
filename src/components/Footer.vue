@@ -6,19 +6,10 @@
 					国際ライセンス</a>の条件のもとで提供しています。
 			</p>
 		</div>
-		<nav>
-			<NuxtLink to="/" class="nav">トップ</NuxtLink>
-			<NuxtLink to="/usage" class="nav">凡例</NuxtLink>
-			<NuxtLink to="/about" class="nav">About</NuxtLink>
-		</nav>
 	</footer>
 </template>
 
 <style scoped>
-	.nav{
-		margin: 4rem 4rem 4rem;
-		text-align: center;
-	}
 .footer {
 	background-color: #5ba9f7;
 	text-align: center;

@@ -1,0 +1,38 @@
+<!-- client/components/Footer.vue -->
+<template>
+	<footer class="footer">
+		<div class="wrapper">
+			<p class="text">本コンテンツは<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">クリエイティブ・コモンズ　表示 4.0
+					国際ライセンス</a>の条件のもとで提供しています。
+			</p>
+		</div>
+		<nav>
+			<NuxtLink to="/" class="nav">トップ</NuxtLink>
+			<NuxtLink to="/usage" class="nav">凡例</NuxtLink>
+			<NuxtLink to="/about" class="nav">About</NuxtLink>
+		</nav>
+	</footer>
+</template>
+
+<style scoped>
+	.nav{
+		margin: 4rem 4rem 4rem;
+		text-align: center;
+	}
+.footer {
+	background-color: #5ba9f7;
+	text-align: center;
+	padding: 26px 0;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 1rem auto;
+	padding: 0 4%;
+}
+
+.text {
+	color: #fff;
+	font-size: 1.4rem;
+}
+</style>

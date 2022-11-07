@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Html } from 'nuxt/dist/head/runtime/components';
+
 const route = useRoute();
 const props = defineProps({
 	numPages: Number,
@@ -14,7 +16,6 @@ function getPath(p: number) {
 }
 
 watch(() => route.query, () => location.reload())
-
 </script>
 	
 <template>
@@ -129,7 +130,6 @@ button:hover {
 }
 
 .tooltip {
-	/* 補足説明するテキストのスタイル */
 	width: 6rem;
 	position: absolute;
 	left: 50%;

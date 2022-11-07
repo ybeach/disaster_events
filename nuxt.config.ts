@@ -4,7 +4,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     css: ['@/assets/css/reset.css', '@/assets/css/style.css'],
-
     app: {
         head: {
             title: "日本中世気象災害史年表稿ビューア",
@@ -18,5 +17,13 @@ export default defineNuxtConfig({
             ],
         },
         pageTransition: { name: 'page', mode: 'out-in' }
-    }
+    },
+    /*
+        router: {
+            scrollBehavior: function (to, from, savedPosition) {
+                return { x: 0, y: 0 }
+            }
+        },
+        */
 })
+

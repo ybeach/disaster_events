@@ -11,7 +11,9 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
 		page: Number(params.page),
 		q: String(params.q),
 	}
-	const result: Article[] = await $fetch('https://www.hi.u-tokyo.ac.jp/personal/t_yamada/output.json');
+	//const result: Article[] = await $fetch('https://www.hi.u-tokyo.ac.jp/personal/t_yamada/output.json');
+	const items_ : any = await import('~~/src/assets/json/output.json');
+	const result: Article[] = items_.default;
 
 	const limit = queries.limit > 10 ? queries.limit : 10;
 	const offset = queries.page > 0 ? queries.page : 0;

@@ -8,11 +8,13 @@
 
 <script>
 // pagenation: scroll location -> "top"
+/*
 useRouter().options.scrollBehavior = (to, from, savedPosition) => {
   if (to.hash === '') {
     return { left: 0, top: 0 }
   }
 }
+*/
 </script>
 
 <style>

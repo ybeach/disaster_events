@@ -11,8 +11,6 @@ declare module '@nuxt/schema' {
 
         cdnURL: string,
     },
-
-    title: string,
   }
   interface PublicRuntimeConfig {
   

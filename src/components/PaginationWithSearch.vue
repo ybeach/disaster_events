@@ -1,6 +1,4 @@
-<!-- client/components/PaginationWithSearch.vue -->
 <script setup lang="ts">
-
 const route = useRoute();
 const props = defineProps({
 	numPages: Number,
@@ -16,6 +14,7 @@ function getPath(p: number) {
 }
 
 watch(() => route.query, () => location.reload())
+
 </script>
 	
 <template>
@@ -23,13 +22,16 @@ watch(() => route.query, () => location.reload())
 		<!--
 		<a :href="`?page=${prevPage}`" class="prev" v-if="current > 1" @click.prevent="onPrev">&lt; 前へ</a>
 		-->
-		<div class="total">
-			<NuxtLink v-if="current > 1" :to="getPath(1)">&lt;&lt;</NuxtLink>
-			<NuxtLink v-if="current > 1" :to="getPath(current - 1)">&lt;</NuxtLink>
-			ページ {{current}}/{{numPages}}
-			<NuxtLink v-if="current < numPages" :to="getPath(current + 1)">&gt;</NuxtLink>
-			<NuxtLink v-if="current < numPages" :to="getPath(numPages)">&gt;&gt;</NuxtLink>
-		</div>
+
+		<NuxtLink v-if="current > 1" :to="getPath(1)"><button>&lt;&lt;<span class="tooltip">先頭へ</span></button></NuxtLink>
+		<NuxtLink v-if="current > 1" :to="getPath(current - 1)"><button>&lt;<span class="tooltip">前へ</span></button>
+		</NuxtLink>
+		ページ {{ current }}/{{ numPages }}
+		<NuxtLink v-if="current < numPages" :to="getPath(current + 1)"><button>&gt;<span class="tooltip">次へ</span></button>
+		</NuxtLink>
+		<NuxtLink v-if="current < numPages" :to="getPath(numPages)"><button>&gt;&gt;<span
+					class="tooltip">最後へ</span></button></NuxtLink>
+
 		<!--
 		<a :href="`?page=${nextPage}`" class="next" v-if="current < numPages" @click.prevent="onNext">次へ &gt;</a>
 				-->
@@ -46,9 +48,6 @@ watch(() => route.query, () => location.reload())
 </template>
 	
 <style scoped>
-	a{
-		margin: 0px 10px auto;
-	}
 .paging {
 	width: 100%;
 	margin: 4rem 0 4rem;
@@ -86,6 +85,73 @@ watch(() => route.query, () => location.reload())
 
 .link {
 	color: #A2A2A6;
+}
+
+a {
+	color: #0f0101ee;
+	text-decoration: none;
+}
+
+button {
+	width: 3rem;
+	height: 2rem;
+	text-align: center;
+
+	font-size: 1.0rem;
+	font-weight: 100;
+	line-height: 1.5;
+	position: relative;
+	display: inline-block;
+
+	border: 1px solid #ffffffee;
+
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	border-radius: 0.5rem;
+	background-color: #ffffffee;
+}
+
+button:hover {
+	border: 1px solid #7f7c7cee;
+	background-color: #edf0ecee;
+	bottom: 100%;
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltip {
+	/* 補足説明するテキストのスタイル */
+	width: 6rem;
+	position: absolute;
+	left: 50%;
+	bottom: 80%;
+	transform: translateX(-50%);
+	margin-bottom: 8px;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: #666;
+	font-size: 0.7em;
+	color: #fff;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	transition: 0.5s all;
+}
+
+button:hover .tooltip {
+	bottom: 100%;
+	visibility: visible;
+	opacity: 1;
 }
 </style>
 	

@@ -86,4 +86,8 @@ h1,
 h2 {
     margin: 4rem 0 4rem;
 }
+a {
+    color: #0f0101ee;
+    text-decoration: none;
+}
 </style>

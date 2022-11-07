@@ -10,7 +10,7 @@
     <div>
       <nav>
         <NuxtLink to="/" class="nav">トップ</NuxtLink>
-        <NuxtLink to="/site" class="nav">このサイトについて</NuxtLink>
+        <!--<NuxtLink to="/site" class="nav">このサイトについて</NuxtLink>-->
         <NuxtLink to="/about" class="nav">『日本中世気象災害史年表稿』について</NuxtLink>
       </nav>
     </div></div>

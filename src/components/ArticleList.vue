@@ -39,6 +39,7 @@ const lists = defineProps({
 <style scoped>
 table {
 	border-spacing: 10px 10px;
+	width: 100%;
 }
 
 th,

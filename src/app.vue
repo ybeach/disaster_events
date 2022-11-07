@@ -18,6 +18,10 @@ useRouter().options.scrollBehavior = (to, from, savedPosition) => {
 </script>
 
 <style>
+div {
+  width: 100%;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s;

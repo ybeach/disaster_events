@@ -14,6 +14,9 @@
 	background-color: #5ba9f7;
 	text-align: center;
 	padding: 26px 0;
+	width: 100% auto;
+	display: flex;
+	
 }
 
 .wrapper {

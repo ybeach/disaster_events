@@ -40,7 +40,7 @@ function submit() {
 </script>
 	
 <template>
-	<div>
+
 		<form class="search-form" @submit.prevent="submit">
 			<!--
 			<input v-if="props.ql.length >0"  type="text" v-model="query" ref="searchForm" />
@@ -49,13 +49,17 @@ function submit() {
 			<input type="text" v-model="query" ref="searchForm" v-bind:placeholder=getPlaceHolder() />
 			<button class="search-btn" type="submit">検索</button>
 		</form>
-	</div>
+
 </template>
 
 
 <style scoped>
 form {
 	display: flex;
+}
+
+div {
+	width: 100%
 }
 
 input[type=text] {
@@ -77,7 +81,7 @@ input[type=text]:focus {
 }
 
 button {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	/*-webkit-appearance: none;*/
 	padding: 4px 8px;
 	border-radius: 4px;
@@ -87,7 +91,7 @@ button {
 	font-family: "Ubuntu", "Noto Sans JP", sans-serif;
 	cursor: pointer;
 	color:rgba(9, 20, 37, 0.577);
-	width: 48px;
+	width: 90px;
 }
 </style>
 	

@@ -23,18 +23,20 @@ watch(() => route.query, () => location.reload());
 </script>
 
 <template>
-	<div class="divider">
-		<div class="aside">
-			<!-- キーワード検索 -->
-			<SearchForm :ql="q" />
+	<div>
+		<div class="divider">
+			<div class="aside">
+				<!-- キーワード検索 -->
+				<SearchForm :ql="q" />
+			</div>
+			<div class="container">
+				<!-- 記事一覧 -->
+				<ArticleList :lists="articles.resd" :total="totalCount" :keyword="q" />
+			</div>
 		</div>
-		<div class="container">
-			<!-- 記事一覧 -->
-			<ArticleList :lists="articles.resd" :total="totalCount" :keyword="q" />
-		</div>
+		<!-- 追加 -->
+		<PaginationWithSearch :numPages="numPages" :current="page" :q="q" :limit="limit" />
 	</div>
-	<!-- 追加 -->
-	<PaginationWithSearch :numPages="numPages" :current="page" :q="q" :limit="limit" />
 </template> 
 
 <style scoped>

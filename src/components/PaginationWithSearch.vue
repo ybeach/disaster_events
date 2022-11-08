@@ -17,11 +17,11 @@ function getPath(p: number) {
 
 watch(() => route.query, () => location.reload())
 
-//useRouter().options.scrollBehavior = (to, from, savedPosition) => {
-  //if (to.hash === '') {
-    //return { left: 0, top: 0 }
-  //}
-//}
+useRouter().options.scrollBehavior = (to, from, savedPosition) => {
+  if (to.hash === '') {
+    return { left: 0, top: 0 }
+  }
+}
 </script>
 	
 <template>

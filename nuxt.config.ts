@@ -15,7 +15,10 @@ export default defineNuxtConfig({
                 }
 
             ],
-            lang: "ja",
+            htmlAttrs:{
+                lang: "ja",
+            }
+            
         },
         pageTransition: { name: 'page', mode: 'out-in' }
     },

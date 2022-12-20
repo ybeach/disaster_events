@@ -3,8 +3,8 @@
 	<footer class="footer">
 		<div class="wrapper">
 			<p class="text">本コンテンツは<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">クリエイティブ・コモンズ　表示 4.0
-					国際ライセンス</a>の条件のもとで提供しています。
-			</p>
+					国際ライセンス</a>の条件のもとで提供しています。</p>
+			<p class="text">東京大学史料編纂所</p>
 		</div>
 	</footer>
 </template>
@@ -28,5 +28,6 @@
 .text {
 	color: #fff;
 	font-size: 1.4rem;
+	margin: 0.5rem 0 0.5rem 0;
 }
 </style>

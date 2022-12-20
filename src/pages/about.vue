@@ -80,7 +80,8 @@
 }
 
 p {
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 4rem 0;
+    line-height: 2rem ;
 }
 
 h1,
@@ -90,5 +91,6 @@ h2 {
 a {
     color: #0f0101ee;
     text-decoration: none;
+    background-color: rgb(235, 232, 227);
 }
 </style>

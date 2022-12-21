@@ -21,7 +21,7 @@ export default defineNuxtConfig({
             
         },
         pageTransition: { name: 'page', mode: 'out-in' },
-        baseURL: "/collection/digitalgallery/disaster_events/",
+        baseURL: "/collection/degitalgallary/disaster_events/",
     },
     /*
         router: {

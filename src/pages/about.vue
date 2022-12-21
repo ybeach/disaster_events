@@ -50,7 +50,7 @@
             <!-- <a href="/pdf/cmdjm-body.pdf">本文（PDF, 6.2 MB）</a><br /><br />-->
             <!-- <NuxtLink to="/pdf/cmdjm-body.pdf">本文（PDF, 6.2 MB）</NuxtLink>-->
 
-            <a href="https://www.hi.u-tokyo.ac.jp//assets/pdf/cmdjm-body.pdf">本文（PDF, 6.2 MB）</a><br /><br />
+            <a href="https://www.hi.u-tokyo.ac.jp/assets/pdf/cmdjm-body.pdf">本文（PDF, 6.2 MB）</a><br /><br />
             
             <!--
                 <a href="/data/pdf/cmdjm-title.pdf">扉</a>,

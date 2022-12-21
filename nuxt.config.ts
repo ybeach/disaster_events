@@ -20,9 +20,9 @@ export default defineNuxtConfig({
             }
             
         },
-        pageTransition: { name: 'page', mode: 'out-in' }
+        pageTransition: { name: 'page', mode: 'out-in' },
+        baseURL: "/collection/degitalgallary/disaster_events/",
     },
-    baseURL: "/collection/degitalgallary/disaster_events/",
     /*
         router: {
             scrollBehavior: function (to, from, savedPosition) {

@@ -21,7 +21,7 @@ export default defineNuxtConfig({
             
         },
         pageTransition: { name: 'page', mode: 'out-in' },
-        baseURL: "/collection/degitalgallary/disaster_events/",
+        cdnURL: "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/disaster_events",
     },
     /*
         router: {

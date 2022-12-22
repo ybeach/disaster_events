@@ -1,7 +1,16 @@
 import type { IncomingMessage, ServerResponse } from 'http'
 //import client from './client'
-import { Article } from './types'
 import * as url from "url";
+
+export type Article = {
+	id: string,
+	wareki: string,
+	gregorian: string,
+	area: string,
+	text: string,
+	source: string,
+	book: string,
+  }
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
 	const params = url.parse(req.url as string, true).query;

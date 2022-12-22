@@ -1,1 +1,0 @@
-export { default } from "file:///Users/yamada/git/disaster_events/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

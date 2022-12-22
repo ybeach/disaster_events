@@ -15,13 +15,13 @@ export default defineNuxtConfig({
                 }
 
             ],
-            htmlAttrs:{
+            htmlAttrs: {
                 lang: "ja",
             }
-            
         },
         pageTransition: { name: 'page', mode: 'out-in' },
-        baseURL: "/collection/degitalgallary/disaster_events/",
+        /* baseURL: "/collection/degitalgallary/disaster_events/", */
+        baseURL: "/collection/digitalgallery/disaster_events/",
     },
     /*
         router: {

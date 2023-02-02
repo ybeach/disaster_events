@@ -12,7 +12,10 @@ export type Article = {
 	book: string,
   }
 
-export default async (req: IncomingMessage, res: ServerResponse) => {
+//export default async (req: IncomingMessage, res: ServerResponse) => {}
+
+export default defineEventHandler(async(event) => {
+  	const req = event.node.req;
 	const params = url.parse(req.url as string, true).query;
 	const queries = {
 		fields: 'id,wareki,gregorian,area,text,source,book',
@@ -54,4 +57,4 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
 	const resd = resData.slice(start, end);
 
 	return { resd, start, end, total };
-}
+})

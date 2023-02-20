@@ -73,6 +73,7 @@
             餓と戦争の戦国を行く』『土一揆と城の戦国を行く』(以上・朝日選書)、『刀狩り』(岩波書店)ほか。<br />
         </p>
         <p>Printed in Japan ISBN978-4-86215-031-8</p>
+        <p>DOI <a href="https://doi.org/10.57459/hi.dg.disaster_events">10.57459/hi.dg.disaster_events</a></p>
     </div>
 </template>
 

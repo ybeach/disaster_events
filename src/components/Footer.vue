@@ -5,6 +5,7 @@
 			<p class="text">本コンテンツは<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">クリエイティブ・コモンズ　表示 4.0
 					国際ライセンス</a>の条件のもとで提供しています。</p>
 			<p class="text">東京大学史料編纂所</p>
+			<p class="text">DOI <a href="https://doi.org/10.57459/hi.dg.disaster_events">10.57459/hi.dg.disaster_events</a></p>
 		</div>
 	</footer>
 </template>
